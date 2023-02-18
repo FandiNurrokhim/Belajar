@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: skyblue;
+}
+
+.wrapper { 
+    width: 20rem;
+    height: 29rem;
+    margin: 150px auto;
+    background-color: royalblue;
+    border-radius: 20px;
+}.textView {
+    width: 18rem;
+    height: 5rem;
+    font-size: 35px;
+    text-align: right;
+    padding-right: 20px;
+
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 15px 0 15px 15px;
+    border-radius: 20px;
+}
+
+
+tr {
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+}td {
+    display: inline-block;
+}button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 3px 2px 0 2px;
+    cursor: pointer;
+    border: none;
+}button:hover {
+
+}.kalkulasi {
+    width: 7.7rem;
+    background-color: orange;
+}
+
+
+/* // waves//  */
+.ocean { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #015871;
+  }
+  
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
+  
+  * { padding: 0; margin: 0; box-sizing: border-box; }
+  body { background-image: linear-gradient(#5C9CD7, #A19FD8, #CCE0F4) }
+  
+  body{
+    overflow: hidden;
+  }
+  .big{
+    border: 2px solid white;
+    background: white;
+    border-radius: 100px;
+    width: 1px;
+    padding: 80px;
+    float: left;
+    position: relative;
+    animation: ani 5s;
+    transition-timing-function: ease-out;
+  }
+  .small{
+    border: 2px solid white;
+    background: white;
+    border-radius: 100px;
+    width: 1px;
+    padding: 60px;
+    float: left;
+    position: relative;
+    animation: ani 5s;
+    transition-timing-function: ease-out;
+  }
+  /*-------------------1stCloud-------------------*/
+  #b1{
+    transform: translatex(400px) translatey(150px);
+  }
+  #s1{
+    transform: translatex(180px) translatey(180px);
+  }
+  #s2{
+    transform: translatex(200px) translatey(180px);
+  }
+  /*-------------------2ndCloud-------------------*/
+  #b2{
+    transform: translatex(400px) translatey(10px);
+  }
+  #s3{
+    transform: translatex(180px) translatey(40px);
+  }
+  #s4{
+    transform: translatex(200px) translatey(40px);
+  }
+  /*-------------------3rdCloud-------------------*/
+  #b3{
+    transform: translatex(-600px) translatey(-120px);
+  }
+  #s5{
+    transform: translatex(-680px) translatey(-100px);
+  }
+  #s6{
+    transform: translatex(-940px) translatey(-100px);
+  }
+  /*-------------------Animation------------------*/
+  @keyframes ani{
+    0%   {bottom: -500px;}
+    100% {bottom: -200px;}
+  }
+  

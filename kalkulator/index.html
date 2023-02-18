@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form name="form">
+                <input type="text" class="textView" id="hasil">
+            </form>
+
+            <table>
+                <tr>
+                    <td><button onclick="reset(' AC ')">AC</button></td>
+                    <td><button onclick="hapus()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backspace" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z" />
+                        <path d="M12 10l4 4m0 -4l-4 4" />
+                      </svg></button></td>
+
+                    <td><button onclick="input(' % ')">%</button></td>
+
+                    <td><button onclick="input(' / ')"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-divide" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle fill="currentColor" cx="12" cy="6" r="1" />
+                        <circle fill="currentColor" cx="12" cy="18" r="1" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                      </svg></button></td>
+
+                    <td><button onclick="input('7')">7</button></td>
+                    <td><button onclick="input('8')">8</button></td>
+                    <td><button onclick="input('%')">9</button></td>
+                    <td><button onclick="input('x')">x</button></td>
+                    <td><button onclick="input('4')">4</button></td>
+                    <td><button onclick="input('5')">5</button></td>
+                    <td><button onclick="input('6')">6</button></td>
+                    <td><button onclick="input(' - ')">-</button></td>
+                    <td><button onclick="input('1')">1</button></td>
+                    <td><button onclick="input('2')">2</button></td>
+                    <td><button onclick="input('3')">3</button></td>
+                    <td><button onclick="input(' + ')">+</button></td>
+                    <td><button onclick="input('0')">0</button></td>
+                    <td><button onclick="input('.')">.</button></td>
+                    <td><button class="kalkulasi" onclick="hitung()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="big" id="b1"></div>
+    <div class="small" id="s1"></div>
+    <div class="small" id="s2"></div>
+    <div class="big" id="b2"></div>
+    <div class="small" id="s3"></div>
+    <div class="small" id="s4"></div>
+    <div class="big" id="b3"></div>
+    <div class="small" id="s5"></div>
+    <div class="small" id="s6"></div>
+
+    <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
